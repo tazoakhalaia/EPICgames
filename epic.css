@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #141414;
+}
+
+/* nav bar*/
+nav {
+    width: 100%;
+    background-color: #2a2a2a;
+    display: flex;
+    height: 70px;
+    border-bottom: 5px;
+}
+
+nav img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+
+.logo-menu {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.logo-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.logo-menu ul li {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.logo-menu ul li a {
+    text-decoration: none;
+    color: rgb(207, 204, 204);
+    text-transform: uppercase;
+    transition: 0.2s;
+
+}
+
+.firstline {
+    position: absolute;
+     background-color:  blue;
+     bottom: 0;
+     width: 72px;
+     height: 6px;
+     left: 60px;
+}
+
+.logo-menu ul li a:hover {
+    color: #fff;
+}
+
+.nav-right {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-right: 50px;
+}
+
+.signin {
+    display: inline-flex;
+    margin-right: -35px;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+.signin a {
+    color: #fff;
+}
+
+.earth {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+
+
+
+.nav-right img {
+    width: 25px;
+    height: 25px;
+}
+
+h2 {
+    height: 100%;
+    background-color: blue;
+    width: 150px;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+
+h2:hover {
+    background-color: blue;
+    opacity: 0.9;
+}
+
+/* end of navbar*/
+
+/* searchbar*/
+
+
+.searchbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #141414;
+    z-index: 5;
+}
+
+.search [type="search"] {
+    width: 150px;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #2a2a2a;
+    background-image: url(./img/search.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: 10px 10px;
+    margin-left: 160px;
+
+}
+
+
+.searchmenu ul {
+    display: flex;
+    padding: 30px;
+    margin-left: -20px;
+}
+
+.searchmenu ul li {
+    margin-left: 20px;
+}
+
+.searchmenu ul li a {
+    color: rgb(248, 248, 248);
+    font-size: 13px;
+}
+
+main {
+    width: 95%;
+    background-color: #141414;
+    margin: auto;
+
+}
+/*banner*/
+.banner {
+    overflow: hidden;
+    height: 510px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.slidefoto {
+    position: relative;
+    float: left;
+    height: 510px;
+    width: 1000px;
+    z-index: 3;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width:3000px;
+    animation: slide 25s ease infinite;
+}
+
+
+@keyframes slide {
+    30% {margin-left: -1000px;}
+    60% {margin-left: -2000px;}
+    100% {margin-left: -2000px;}
+}
+
+.button {
+    z-index: 10;
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    left: 40px;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.exclusive {
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+    left: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.start {
+    position: absolute;
+    top: 72%;
+    left: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.add {
+    position: absolute;
+    top: 81%;
+    left: 22%;
+    width: 160px;
+    height: 50px;
+    display: flex;
+}
+
+.add img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.addtext {
+   text-align: center;
+   padding: 10px;
+   color: white;
+   cursor: pointer;
+}
+
+
+/*end banner*/
+
+/*games sales*/
+.sales {
+    position: relative;
+}
+.sale {
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    font-size: 20px;
+
+}
+.games-sales {
+    display: flex;
+    margin-left: 90px;
+}
+
+.game img {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.game {
+    padding: 31px;
+}
+
+.name {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+.info {
+    display: flex;
+}
+
+.info p {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.discount {
+    background-color: blue;
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.discount p {
+    padding: 5px;
+}
+
+.lm-games img {
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.lm-games {
+    width: 300px;
+
+}
+
+.learn-more-games {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lm-games h1 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lm-games p {
+    color: white;
+    padding: 5px 0;
+    line-height: 18px;
+}
+
+.lm-games a {
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid grey;
+}
+
+/*end games sales*/
+
+/* free games*/
+.free {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background-color: grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    height: 500px;
+    
+}
+
+.above {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.gift {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.gift img {
+    width: 50px;
+    height: 50px;
+}
+
+.gift h1 {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.see {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    padding-left: 45px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.see h1 {
+    color: white;
+}
+
+.freegames {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    margin-left: 35px;
+    border-radius: 5px;
+
+}
+
+.fgames {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.freegames::after {
+    content: 'Free Now';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 195, 255);
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.freegames1 {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    margin-left: 35px;
+    border-radius: 5px;
+}
+
+.freegames1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.freegames1::after {
+    content: 'Coming Soon';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(37, 44, 46);
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.freegames img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.freegames h1 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.freegames p {
+    color: rgb(199, 185, 185);
+    font-size: 13px;
+}
+
+.freegames1 h1 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.freegames1 p {
+    color: rgb(199, 185, 185);
+    font-size: 13px;
+}
+
+
+
+/*free games end*/
+
+/* new realeses*/
+
+.releas-container {
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    position: relative;
+    display: block;
+    margin-top: 5px;
+
+    
+}
+
+.border {
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    border-radius: 2px;
+    left: 32%;
+    height: 100%;
+    display: block;
+}
+
+.releases {
+    display: inline-block;
+    width: 33%;
+    border-right: 2px solid white;
+
+
+}
+.rel-games {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.rel-games:hover {
+    background-color: rgb(167, 156, 156, 0.2);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.rel-games img {
+    width: 60px;
+    height: 80px;
+    border-radius: 3px;
+}
+
+.rl-games-info {
+    margin-left: 8px;
+}
+.rel-games h1 {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.rel-games p {
+    color: white;
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.rel-games span {
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgb(53, 33, 161);
+    padding: 3px;
+    background-color: rgb(53, 33, 161);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.rel-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.rel-head h1 {
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.rel-head p {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+
+
+
+}
+
+
+
+/*new realeses end*/
+
+
+/* pregames*/
+
+.pre-container {
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.pre-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+    
+}
+
+.preinfo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.preinfo p {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+
+/*end pre games*/
